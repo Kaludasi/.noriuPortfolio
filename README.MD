@@ -43,7 +43,7 @@
     <h2 align="center">Final project</h2>
 </p>
 
-<span align="center">![logo](api/public/images/logo.png)</span>
+<span align="center" style="width: 100%; height: auto">![logo](api/public/images/logo.png)</span>
 
 <h2 align="center">About</h2>
 
