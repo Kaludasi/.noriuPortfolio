@@ -1,0 +1,95 @@
+{
+  "header": {
+    "products": "Produktai",
+    "aboutMe": "Apie mane",
+    "contacts": "Kontaktai",
+    "login": "Prisijungti",
+    "mainMenu": "Pagrindinis meniu",
+    "account": "Paskyra",
+    "profile": "Profilis",
+    "logout": "Atsijungti",
+    "adminMenu": "Admin meniu",
+    "dashboard": "Pagr. informacija",
+    "orders": "Užsakymai",
+    "signup": "Registruotis"
+  },
+  "login": {
+    "login": "Prisijungti",
+    "email": "El. paštas",
+    "password": "Slaptažodis",
+    "signup": "Registruotis",
+    "submitting": "Siunčiama..."
+  },
+  "signup": {
+    "signup": "Registruotis",
+    "name": "Vardas",
+    "surname": "Pavardė",
+    "email": "El. paštas",
+    "phone": "Tel. numeris",
+    "password": "Slaptažodis",
+    "repeatPassword": "Pakartokite slaptažodį",
+    "login": "Prisijungti",
+    "submitting": "Siunčiama..."
+  },
+  "contacts": {
+    "mailUs": "Parašykite mums laišką",
+    "callUs": "Susisiekite skambučiu"
+  },
+  "aboutMe": {
+    "about": "Esu Klaudijus - CodeAcademy studentas ir ši svetainė yra 'JAVA advanced' kursų baigiamasis darbas. Jau trečiame kurse pastebėjau kad puikiai sekasi kurti svetines ir jų dizainą todėl nusprendžiau padėti ir kitiems žmonėms, kurie nori džiaugtis savo savo darbais publikuodami juos internete."
+  },
+  "order": {
+    "edit": "Redaguoti užsakymą",
+    "delete": "Ištrinti užsakym(ą/us)",
+    "order": "Užsakyti",
+    "name": "Vardas",
+    "surname": "Pavardė",
+    "email": "El. paštas",
+    "phone": "Tel. Numeris",
+    "describeYourProduct": "Aprašykite savo produkto idėją",
+    "paymentType": "Apmokėjimo būdas",
+    "save": "Iššsaugoti",
+    "pay": "Sumokėti",
+    "submitting": "Siunčiama...",
+    "status": "Statusas",
+    "customer": "Klientas",
+    "orderis": "Užsakymas",
+    "product": "Produktas",
+    "price": "Kaina",
+    "productDescription": "Produkto aprašymas"
+  },
+  "product": {
+    "edit": "Koreguoti produktą",
+    "new": "Sukurti naują produktą",
+    "delete": "Ištinti produkt(ą/us)",
+    "name": "Pavadinimas",
+    "description": "Aprašymas",
+    "price": "Kaina",
+    "submitting": "Siunčiama...",
+    "save": "Išsaugoti",
+    "order": "Užsakyti"
+  },
+  "dashboard": {
+    "activeOrders": "Priimti užsakymai",
+    "totalProfit": "Is viso uždirbta",
+    "completedOrders": "Įvykdyti užsakymai"
+  },
+  "profile": {
+    "fullName": "Pilnas vardas",
+    "email": "El. Paštas",
+    "phone": "Tel. Nr.",
+    "laukiamaApmokejimo": "Laukiama apmokėjimo",
+    "vykdoma": "Vykdoma",
+    "priimta": "Priimta",
+    "ivvykdyta": "Ivykdyta",
+    "productName": "Produktas",
+    "price": "Kaina",
+    "status": "Statusas"
+  },
+  "validation": {
+    "required": " yra privalomas laukas",
+    "minLength": "{{name}} turi būti ilgesnis nei {{value}} simboliai",
+    "maxLength": "{{name}} turi būti trumpesnis nei {{value}} simboliai",
+    "email": "Neteisingas el. pašto adresas"
+  }
+}

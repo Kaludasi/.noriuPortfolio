@@ -1,0 +1,95 @@
+{
+  "header": {
+    "products": "Products",
+    "aboutMe": "About me",
+    "contacts": "Contacts",
+    "login": "Log in",
+    "mainMenu": "Main menu",
+    "account": "Account",
+    "profile": "Profile",
+    "logout": "Logout",
+    "adminMenu": "Admin menu",
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "signup": "Signup"
+  },
+  "login": {
+    "login": "Log in",
+    "email": "Email",
+    "password": "Password",
+    "submitting": "Submitting...",
+    "signup": "Sign up"
+  },
+  "signup": {
+    "signup": "Sign up",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "repeatPassword": "Repeat password",
+    "login": "Log in",
+    "submitting": "Submitting..."
+  },
+  "contacts": {
+    "mailUs": "Mail us",
+    "callUs": "Call us"
+  },
+  "aboutMe": {
+    "about": "I am Klaudijus - Code Academy student an this website is my 'JAVA advanced' courses final project. Already in third course I saw that website's creation and design is my way, so I decided to help others celebrate with their own works on WEB"
+  },
+  "order": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "order": "Order",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "phone": "Phone no.",
+    "describeYourProduct": "Describe your product",
+    "paymentType": "Payment type",
+    "save": "Save",
+    "pay": "Pay",
+    "submitting": "Submitting...",
+    "status": "Status",
+    "customer": "Customer",
+    "orderis": "Order",
+    "product": "Product",
+    "price": "Price",
+    "productDescription": "Product description"
+  },
+  "product": {
+    "edit": "Edit",
+    "new": "Create",
+    "delete": "Delete",
+    "name": "Name",
+    "description": "Description",
+    "price": "Price",
+    "submitting": "Submitting...",
+    "save": "Save",
+    "order": "Order"
+  },
+  "dashboard": {
+    "activeOrders": "Active orders",
+    "totalProfit": "Total profit",
+    "completedOrders": "Completed orders"
+  },
+  "profile": {
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "laukiamaApmokejimo": "Waiting for payment",
+    "vykdoma": "In process",
+    "priimta": "Accepted",
+    "ivvykdyta": "Completed",
+    "productName": "Product name",
+    "price": "Price",
+    "status": "Status"
+  },
+  "validation": {
+    "required": " is required field",
+    "minLength": " must be at least {{value}} characters",
+    "maxLength": " needs to be shorter than {{value}}",
+    "email": "Invalid email"
+  }
+}
