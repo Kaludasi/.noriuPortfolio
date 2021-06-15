@@ -39,7 +39,7 @@ I created a website in which you can order CV or Portoflio website.
    ```sh
    npm install
    ```
-3. Enter your SECRET JWT KEY in `application.properties`
+3. Enter your SECRET KEY (SHA512) in `application.properties`
    ```properties
    security.jwt.secret=${SECRET_KEY};
    ```
