@@ -15,7 +15,7 @@ export default () => {
 
     const save = (formData) => {
         saveProduct(formData)
-            .then(history.push("/admin/products"))
+            .then(() => history.push("/admin/products"))
     }
 
     return (

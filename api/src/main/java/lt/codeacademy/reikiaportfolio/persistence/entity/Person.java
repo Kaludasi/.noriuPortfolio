@@ -1,6 +1,7 @@
 package lt.codeacademy.reikiaportfolio.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
@@ -23,17 +24,25 @@ public class Person implements UserDetails {
 
     @Id
     @GeneratedValue
+    @ApiModelProperty(notes = "personId", value = "1", name = "id")
     private Long id;
+    @ApiModelProperty(notes = "Name", value = "luakiamaApmokejimo", name = "name")
     private String name;
+    @ApiModelProperty(notes = "Surname", value = "luakiamaApmokejimo", name = "surname")
     private String surname;
     @Column(name = "email")
+    @ApiModelProperty(notes = "Email", value = "luakiamaApmokejimo", name = "status")
     private String email;
     @JsonIgnore
+    @ApiModelProperty(notes = "Password", value = "luakiamaApmokejimo", name = "password")
     private String password;
     @OneToOne
+    @ApiModelProperty(notes = "Role", value = "luakiamaApmokejimo", name = "role")
     private Role role;
+    @ApiModelProperty(notes = "Phone", value = "luakiamaApmokejimo", name = "phone")
     private String phone;
-    @OneToMany
+    @OneToMany(orphanRemoval = true)
+    @ApiModelProperty(notes = "Order", value = "orders", name = "orders")
     List<PersonOrder> orders;
 
     protected Person() {

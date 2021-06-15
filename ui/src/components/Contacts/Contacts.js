@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {makeStyles} from "@material-ui/core/styles";
 import {useTranslation} from "react-i18next";
-import {Container, Icon, IconButton} from "@material-ui/core";
+import {Container} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     container: {

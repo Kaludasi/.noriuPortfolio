@@ -2,15 +2,12 @@ import {Form, Formik} from "formik";
 import Container from "@material-ui/core/Container";
 import {FormikInput, FormikStatus} from "../FormikInput/FormikInput";
 import Button from "@material-ui/core/Button";
-import * as Yup from "yup";
-import {createOrder, editOrder, saveOrder, updateOrder} from "../../api/ordersApi";
+import {updateOrder} from "../../api/ordersApi";
 import {useTranslation} from "react-i18next";
 import {Card, CardContent} from "@material-ui/core";
 import {useState} from "react";
 import {useHistory} from "react-router-dom";
-import {updateProduct} from "../../api/productsApi";
 import {editOrderValidationSchema} from "../../validation/validationSchemas";
-
 
 
 export default ({order}) => {

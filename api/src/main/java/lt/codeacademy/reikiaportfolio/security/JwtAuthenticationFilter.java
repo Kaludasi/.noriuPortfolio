@@ -2,7 +2,6 @@ package lt.codeacademy.reikiaportfolio.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lt.codeacademy.reikiaportfolio.api.dto.LoginDTO;
-import lt.codeacademy.reikiaportfolio.api.dto.UserLoginDTO;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;

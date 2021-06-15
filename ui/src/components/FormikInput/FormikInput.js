@@ -78,7 +78,7 @@ export const FormikPay = ({name, label, error, placeholder = "Type...", ...props
                    name={name}
                    label={label}
                    {...props}
-                   variant="outlined" select>
+                   variant="outlined" select="true">
                 <MenuItem value="swedbank">Swedbank</MenuItem>
                 <MenuItem value="seb">SEB</MenuItem>
                 <MenuItem value="bankinisPavedimas">Bank transfer</MenuItem>
@@ -113,7 +113,7 @@ export const FormikStatus = ({name, label, error, value, onChange, placeholder =
                    label={label}
                    {...props}
                    variant="outlined"
-                   select>
+                   select="true">
                 <MenuItem value="laukiamaApmokejimo">Laukiama apmokejimo</MenuItem>
                 <MenuItem value="priimta">Priimta</MenuItem>
                 <MenuItem value="vykdoma">Vykdoma</MenuItem>

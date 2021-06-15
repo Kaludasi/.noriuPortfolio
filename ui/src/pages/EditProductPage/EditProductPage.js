@@ -11,7 +11,7 @@ export default ({id}) => {
             .then(({data}) => {
                 setProduct(data)
             }).finally(() => setIsLoading(false))
-    }, [])
+    }, [id])
 
     return (
         <>

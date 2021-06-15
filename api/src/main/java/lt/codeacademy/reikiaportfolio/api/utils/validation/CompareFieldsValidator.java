@@ -25,9 +25,8 @@ public class CompareFieldsValidator implements ConstraintValidator<CompareFields
 
             return first != null && first.equals(second);
         } catch (Exception e) {
-            //TODO log exception
+            throw new IllegalArgumentException();
         }
-        return false;
     }
 
     private Object getValue(Object obj, String fieldName) throws NoSuchFieldException, IllegalAccessException {

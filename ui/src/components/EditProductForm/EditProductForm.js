@@ -1,7 +1,6 @@
 import {Form, Formik} from "formik";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
-import * as Yup from "yup";
 import {updateProduct} from "../../api/productsApi";
 import {FormikInput, FormikTextarea} from "../FormikInput/FormikInput";
 import {useTranslation} from "react-i18next";
@@ -11,7 +10,6 @@ import {useHistory} from "react-router-dom";
 import {editProductValidationSchema} from "../../validation/validationSchemas";
 
 
-
 export default ({product}) => {
     const {t} = useTranslation("product")
     const [newProduct, setNewProduct] = useState(product);
@@ -19,7 +17,7 @@ export default ({product}) => {
 
     const save = () => {
         updateProduct(newProduct)
-            .then(history.push("/admin/products"))
+            .then(() => history.push("/admin/products"))
     }
 
     return (

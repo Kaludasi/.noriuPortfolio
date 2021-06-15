@@ -7,9 +7,8 @@ import io.swagger.annotations.ApiResponses;
 import lt.codeacademy.reikiaportfolio.api.Endpoint;
 import lt.codeacademy.reikiaportfolio.api.dto.CreateOrderDTO;
 import lt.codeacademy.reikiaportfolio.api.dto.UserOrderDTO;
-import lt.codeacademy.reikiaportfolio.api.exceptions.user.UserNotFoundException;
-import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
+import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Product;
 import lt.codeacademy.reikiaportfolio.service.MyUserDetailsService;
 import lt.codeacademy.reikiaportfolio.service.ProductService;
@@ -19,8 +18,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.lang.Long;
-import java.util.Optional;
 
 import static lt.codeacademy.reikiaportfolio.api.utils.EntityMapper.map;
 import static lt.codeacademy.reikiaportfolio.api.utils.EntityMapper.mapOrderList;
@@ -71,10 +68,9 @@ public class UserOrderController {
     })
     @ResponseStatus(HttpStatus.CREATED)
     public void createOrder(@Valid @RequestBody CreateOrderDTO createOrderDTO) {
-        Person person;
-        Product product;
-        person = myUserDetailsService.loadUserByUsername(createOrderDTO.getEmail());
-        product = productService.getById(createOrderDTO.getProduct());
+        Person person = myUserDetailsService.loadUserByUsername(createOrderDTO.getEmail());
+        Product product = productService.getById(createOrderDTO.getProduct());
+        createOrderDTO.setStatus("laukiamaApmokejimo");
         userOrderService.createorUpdateOrder(map(createOrderDTO, person, product));
     }
 

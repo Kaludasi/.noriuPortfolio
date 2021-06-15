@@ -1,7 +1,7 @@
 package lt.codeacademy.reikiaportfolio.api.utils;
 
-import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
+import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Product;
 
 import java.math.BigDecimal;

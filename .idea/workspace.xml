@@ -4,28 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="" />
+    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="add locale config">
+      <change afterPath="$PROJECT_DIR$/api/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/UserOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/UserOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/CreateOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/CreateOrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/PersonInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/PersonInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserOrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserRegistrationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserRegistrationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/exceptions/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/exceptions/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/validation/CompareFieldsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/validation/CompareFieldsValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/InitialDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/InitialDataConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/PersonOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/PersonOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/api/authApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Contacts/Contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/EditOrderForm/EditOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/EditOrderForm/EditOrderForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/EditProductForm/EditProductForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/EditProductForm/EditProductForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/FormikInput/FormikInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/FormikInput/FormikInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/OrderForm/OrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/OrderForm/OrderForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Product/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/ProductForm/ProductForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/ProductForm/ProductForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/UserLogin/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/UserLogin/UserLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/UserRegistration/UserRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/UserRegistration/UserRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/i18n/LanguageHrefList/LanguageHrefList.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/i18n/LanguageHrefList/LanguageHrefList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/i18n/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/i18n/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/EditOrderPage/EditOrderPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/EditOrderPage/EditOrderPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/EditProductPage/EditProductPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/EditProductPage/EditProductPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/LandingPage/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/OrderPage/OrderPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/OrderPage/OrderPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/OrdersPage/OrdersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/OrdersPage/OrdersPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/ProductsPage/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/ProductsPage/ProductsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/ProfilePage/ProfilePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1sObMTgLXuqDp84Cxd6hyjNrsZP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -55,8 +114,193 @@
       <workItem from="1623341408096" duration="4000" />
       <workItem from="1623341435256" duration="6000" />
       <workItem from="1623754396730" duration="6213000" />
-      <workItem from="1623777184398" duration="330000" />
+      <workItem from="1623777184398" duration="1650000" />
+      <workItem from="1623778860676" duration="2032000" />
+      <workItem from="1623796591964" duration="17000" />
     </task>
+    <task id="LOCAL-00001" summary="add aplication properties and profiles">
+      <created>1623777570891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777570891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add basic entity">
+      <created>1623777636235</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777636235</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add DTO's">
+      <created>1623777662122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777662122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add config">
+      <created>1623777700461</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777700461</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add jwt">
+      <created>1623777710985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777710985</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add entity map utils">
+      <created>1623777726469</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777726469</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add exceptions and advice">
+      <created>1623777743716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777743716</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add validator">
+      <created>1623777761397</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777761398</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add repositories">
+      <created>1623777782771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777782771</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add services">
+      <created>1623777794984</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777794984</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add controllers">
+      <created>1623777810493</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777810493</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add main">
+      <created>1623777822960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777822960</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add validator">
+      <created>1623777831719</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777831720</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add endpoint interface">
+      <created>1623777845566</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777845566</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add photos">
+      <created>1623777871611</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777871611</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add pages">
+      <created>1623777938503</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777938503</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add style">
+      <created>1623777956047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1623777956047</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add components">
+      <created>1623778000088</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778000088</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add redux">
+      <created>1623778014173</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778014173</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add multilanguage">
+      <created>1623778038619</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778038619</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add index files">
+      <created>1623778090953</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778090953</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add readme">
+      <created>1623778099189</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778099189</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add package json">
+      <created>1623778110875</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778110875</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add validation schemas">
+      <created>1623778138255</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778138256</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add locale config">
+      <created>1623778148168</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778148168</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add locale config">
+      <created>1623778560156</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1623778560156</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +317,33 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add aplication properties and profiles" />
+    <MESSAGE value="add basic entity" />
+    <MESSAGE value="add DTO's" />
+    <MESSAGE value="add config" />
+    <MESSAGE value="add jwt" />
+    <MESSAGE value="add entity map utils" />
+    <MESSAGE value="add exceptions and advice" />
+    <MESSAGE value="add repositories" />
+    <MESSAGE value="add services" />
+    <MESSAGE value="add controllers" />
+    <MESSAGE value="add main" />
+    <MESSAGE value="add validator" />
+    <MESSAGE value="add endpoint interface" />
+    <MESSAGE value="add photos" />
+    <MESSAGE value="add api" />
+    <MESSAGE value="add pages" />
+    <MESSAGE value="add style" />
+    <MESSAGE value="add components" />
+    <MESSAGE value="add redux" />
+    <MESSAGE value="add multilanguage" />
+    <MESSAGE value="add index files" />
+    <MESSAGE value="add readme" />
+    <MESSAGE value="add package json" />
+    <MESSAGE value="add validation schemas" />
+    <MESSAGE value="add locale config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add locale config" />
   </component>
 </project>

@@ -6,9 +6,16 @@ import {saveOrder} from "../../api/ordersApi";
 import {useTranslation} from "react-i18next";
 import {Card, CardContent} from "@material-ui/core";
 import {orderValidationSchema} from "../../validation/validationSchemas";
+import {useHistory} from "react-router-dom";
 
 export default ({product, personInfo}) => {
     const {t} = useTranslation("order");
+    const history = useHistory();
+
+    const save = (formData) => {
+        saveOrder(formData)
+            .finally(() => history.push("/account"))
+    }
 
     return (
         <Formik initialValues={{
@@ -22,7 +29,7 @@ export default ({product, personInfo}) => {
             status: 'laukiamaApmokejimo',
         }}
                 validationSchema={orderValidationSchema}
-                onSubmit={saveOrder}>
+                onSubmit={save}>
             {props => (
                 <>
                     <Container maxWidth={"sm"} style={{margin: "auto"}}>

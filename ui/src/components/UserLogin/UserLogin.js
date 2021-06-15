@@ -2,7 +2,6 @@ import {Form, Formik} from "formik";
 import Container from "@material-ui/core/Container";
 import {FormikInput} from "../FormikInput/FormikInput";
 import Button from "@material-ui/core/Button";
-import * as Yup from "yup";
 import {loginUser} from "../../api/authApi";
 import {Card, CardContent, Divider} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
@@ -30,7 +29,7 @@ export default () => {
 
                 history.push(from || '/')
             })
-            .finally(() => setSubmitting(false))
+            .finally(setSubmitting(false))
     }
 
     return (

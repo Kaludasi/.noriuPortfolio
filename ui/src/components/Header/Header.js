@@ -1,36 +1,12 @@
 import React, {useState} from "react";
-import {makeStyles} from "@material-ui/core/styles";
 import {useTranslation} from "react-i18next";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Drawer, Link, SwipeableDrawer} from "@material-ui/core";
+import {Link, SwipeableDrawer} from "@material-ui/core";
 import {useDispatch, useSelector} from "react-redux";
 import {NavLink} from "react-router-dom";
 import LanguageHrefList from "../../i18n/LanguageHrefList/LanguageHrefList";
 import scrollToRef from "../../style";
-import {logout} from "../../api/authApi";
-import store from "../../store/store";
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    list: {
-        width: 250,
-    },
-    fullList: {
-        width: 'auto',
-    },
-    header: {
-        backgroundColor: '#1C00ff00',
-        color: 'black',
-        width: '100%',
-        display: "flex",
-        justifyContent: "space-around"
-    }
-}))
+import {logout} from "../../store/slices/userSlice";
 
 export default () => {
     const [responsiveOpen, setResponsiveOpen] = useState(false)
@@ -39,9 +15,7 @@ export default () => {
     const dispatch = useDispatch();
 
     const logoutUser = () => {
-        dispatch(
-
-        )
+        dispatch(logout())
     }
 
     return (
@@ -54,18 +28,18 @@ export default () => {
                         .noriuPortfolio
                     </h1>
                 </Link>
-                <a style={{margin: "auto 6%"}}
+                <button style={{margin: "auto 6%", backgroundColor: "transparent", borderColor: "transparent"}}
                    onClick={() => setResponsiveOpen(!responsiveOpen)}>
                     <FontAwesomeIcon style={{fontSize: '25px', color: "white"}} icon={["fa", "bars"]}/>
-                </a>
+                </button>
             </div>
             <SwipeableDrawer open={responsiveOpen}
-                    variant={"persistent"}
-                    onClose={() => setResponsiveOpen(false)}
-                    onOpen={() => setResponsiveOpen(true)}
-                    ModalProps={{hideBackdrop: true}}
-                    anchor={'right'}
-                    style={{zIndex: 3}}>
+                             variant={"persistent"}
+                             onClose={() => setResponsiveOpen(false)}
+                             onOpen={() => setResponsiveOpen(true)}
+                             ModalProps={{hideBackdrop: true}}
+                             anchor={'right'}
+                             style={{zIndex: 3}}>
                 <div style={{paddingTop: '10vh', display: 'flex', flexDirection: 'column', width: '100%'}}>
                     <div style={{display: 'flex', justifyContent: 'space-around'}}>
                         <LanguageHrefList/>
@@ -82,12 +56,12 @@ export default () => {
                                           component={NavLink}>
                                         {t('profile')}
                                     </Link>
-                                    <a
-                                        onClick={() => logoutUser}
+                                    <Link
+                                        onClick={logoutUser}
                                         className={'btn10'}
                                         style={{margin: '10px'}}>
                                         {t('logout')}
-                                    </a>
+                                    </Link>
                                 </div>
                                 {loggedInUser.role.roleName === "ADMIN" ?
                                     <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>

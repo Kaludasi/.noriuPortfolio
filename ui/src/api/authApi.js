@@ -1,6 +1,5 @@
 import HTTP from "./index";
 import axios from "axios";
-import store from "../store/store";
 
 export const loginUser = (user) =>
     HTTP.post('/login', user)

@@ -7,7 +7,6 @@ import org.springframework.lang.Nullable;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.UUID;
 
@@ -25,7 +24,6 @@ public class CreateOrderDTO {
     private String email;
     @NotEmpty(message = "Phone is required")
     private String phone;
-    @NotEmpty(message = "Product is required")
     private UUID product;
     @Nullable
     private String productDescription;

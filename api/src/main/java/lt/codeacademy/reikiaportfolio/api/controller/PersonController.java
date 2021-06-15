@@ -7,8 +7,10 @@ import io.swagger.annotations.ApiResponses;
 import lt.codeacademy.reikiaportfolio.api.Endpoint;
 import lt.codeacademy.reikiaportfolio.api.dto.PersonInfoDTO;
 import lt.codeacademy.reikiaportfolio.service.MyUserDetailsService;
-import org.springframework.data.repository.query.Param;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(Endpoint.PERSON)

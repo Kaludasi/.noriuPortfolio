@@ -1,5 +1,6 @@
 package lt.codeacademy.reikiaportfolio.persistence.entity;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -13,7 +14,9 @@ import javax.persistence.Id;
 public class Role implements GrantedAuthority {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "Role id", value = "2L", name = "id")
     private long id;
+    @ApiModelProperty(notes = "Status", value = "luakiamaApmokejimo", name = "status")
     private String roleName;
 
     public Role(Long id, String roleName) {

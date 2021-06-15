@@ -7,10 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
@@ -32,7 +29,7 @@ public class Product {
     private UUID id;
 
     @NotBlank
-    @Size(min = 3, max = 50, message = "{validation.size.name}")
+    @Size(min = 3, max = 50)
     @ApiModelProperty(notes = "Product name", required = true, value = "default name", name = "name")
     private String name;
 

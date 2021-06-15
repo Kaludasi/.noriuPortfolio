@@ -19,8 +19,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.util.AntPathMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -55,7 +53,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET,"/products", "/products/*").permitAll()
+                .antMatchers(HttpMethod.GET,"/products", "/products/*", "/h2/*").permitAll()
                 .antMatchers(HttpMethod.POST,"/signup", "/login", "/orders/**").permitAll()
                 .anyRequest().authenticated()
                 .and()

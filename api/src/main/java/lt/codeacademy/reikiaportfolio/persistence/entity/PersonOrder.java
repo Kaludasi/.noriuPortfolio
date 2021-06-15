@@ -21,10 +21,14 @@ public class PersonOrder {
     private Long id;
 
     @OneToOne
+    @ApiModelProperty(notes = "Product", value = "1", name = "product")
     private Product product;
     @ManyToOne(cascade =  CascadeType.PERSIST)
+    @ApiModelProperty(notes = "Person", value = "1", name = "customer")
     private Person customer;
+    @ApiModelProperty(notes = "Product description", name = "productDescription")
     private String productDescription;
+    @ApiModelProperty(notes = "Status", value = "luakiamaApmokejimo", name = "status")
     private String status;
 }
 

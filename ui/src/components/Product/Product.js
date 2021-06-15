@@ -34,8 +34,7 @@ export default ({product}) => {
                         <span className={classes.marginBottom}>{t("price")}: {product.price} €</span>
                         <Link className={'btn10'}
                               style={{textDecoration: 'none', width: '50%', margin: '0 auto', borderColor: 'white'}}
-                            to={`/products/${product.id}`}
-                              variant={"outlined"}
+                              to={`/products/${product.id}`}
                               color={"primary"}
                               component={NavLink}>{t("order")}
                         </Link>

@@ -333,6 +333,8 @@ a {
 }
 
 .href {
+  background-color: transparent;
+  border-color: transparent;
   color: white;
   cursor: pointer;
   margin: 5px;

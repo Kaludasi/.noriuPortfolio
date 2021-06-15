@@ -29,23 +29,25 @@ export default () => {
                     <CardContent>
                         <ProductsTools update={update}/>
                         <Table style={{marginTop: '10px'}}>
-                            <tr>
-                                <th/>
-                                <th>{t("name")}</th>
-                                <th>{t("price")}</th>
-                                <th>{t("description")}</th>
-                            </tr>
-                            {products.map(product => {
-                                return (
-                                    <tr>
-                                        <td><input style={{margin: 'auto'}} id={product.id} type={'checkbox'}/></td>
-                                        <td>{product.name}</td>
-                                        <td>{product.price}€</td>
-                                        <td>{product.description}</td>
-                                    </tr>
-                                )
-                            })}
-                        </Table >
+                            <tbody>
+                                <tr>
+                                    <th/>
+                                    <th>{t("name")}</th>
+                                    <th>{t("price")}</th>
+                                    <th>{t("description")}</th>
+                                </tr>
+                                {products.map(product => {
+                                    return (
+                                        <tr key={product.id}>
+                                            <td><input style={{margin: 'auto'}} id={product.id} type={'checkbox'}/></td>
+                                            <td>{product.name}</td>
+                                            <td>{product.price}€</td>
+                                            <td>{product.description}</td>
+                                        </tr>
+                                    )
+                                })}
+                            </tbody>
+                        </Table>
                     </CardContent>
                 </Card>
             </Container>

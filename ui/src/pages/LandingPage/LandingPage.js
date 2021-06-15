@@ -50,7 +50,7 @@ export default () => {
         fetchProducts()
             .then(({data}) => {
                 setProducts(data)
-            }).finally(() => setLoading(false))
+            }).finally(setLoading(false))
     }, [])
 
     return (
@@ -73,7 +73,7 @@ export default () => {
                 <Container className={classes.container}
                            id="productsDiv">
                     {loading ? <CircularProgress/> : products.map(
-                        product => <Product product={product}/>
+                        product => <Product key={product.id} product={product}/>
                     )}
                     {
                         products.length ? '' :

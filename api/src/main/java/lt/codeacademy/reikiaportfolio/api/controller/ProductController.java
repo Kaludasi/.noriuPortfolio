@@ -4,12 +4,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import lt.codeacademy.reikiaportfolio.api.Endpoint;
 import lt.codeacademy.reikiaportfolio.api.dto.ProductDTO;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Product;
 import lt.codeacademy.reikiaportfolio.service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import lt.codeacademy.reikiaportfolio.api.Endpoint;
 
 import javax.validation.Valid;
 import java.util.List;

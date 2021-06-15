@@ -22,7 +22,7 @@ export default () => {
             .catch(error => {
                 setErrorMessage(error.response.data.message);
                 setOpen(true)
-            }).finally(() => setSubmitting(false))
+            }).finally(setSubmitting(false))
 
     }
 

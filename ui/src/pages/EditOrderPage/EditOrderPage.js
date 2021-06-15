@@ -13,7 +13,7 @@ export default () => {
             .then(({data}) => {
                 setOrder(data)
             }).finally(() => setIsLoading(false))
-    }, [])
+    }, [id])
 
     return (
         <>

@@ -5,14 +5,10 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lt.codeacademy.reikiaportfolio.api.dto.UserLoginDTO;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
-import lt.codeacademy.reikiaportfolio.service.MyUserDetailsService;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/login")

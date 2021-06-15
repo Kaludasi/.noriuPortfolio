@@ -2,8 +2,8 @@ package lt.codeacademy.reikiaportfolio.api.utils;
 
 import lt.codeacademy.reikiaportfolio.api.dto.*;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
-import lt.codeacademy.reikiaportfolio.persistence.entity.Product;
 import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
+import lt.codeacademy.reikiaportfolio.persistence.entity.Product;
 
 import java.util.List;
 import java.util.stream.Collectors;

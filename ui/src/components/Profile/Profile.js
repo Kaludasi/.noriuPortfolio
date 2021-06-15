@@ -7,17 +7,16 @@ import Container from "@material-ui/core/Container";
 
 export default () => {
     const {t} = useTranslation("profile")
-    const [userInfo, setUserInfo] = useState()
+    const [userInfo, setUserInfo] = useState({orders: []})
     const [submitting, setSubmitting] = useState(true);
     const email = useSelector(state => state.user.loggedInUser?.email)
 
     useEffect(() => {
         fetchUserInfo(email)
             .then(({data}) => {
-                console.log(data)
                 setUserInfo(data)
-            }).finally(() => setSubmitting(false))
-    }, [])
+            }).finally(setSubmitting(false))
+    }, [email])
 
     return (
         <>

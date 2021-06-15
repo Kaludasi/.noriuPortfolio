@@ -4,7 +4,9 @@ import lombok.Data;
 import lt.codeacademy.reikiaportfolio.api.utils.validation.annotation.CompareFields;
 import lt.codeacademy.reikiaportfolio.api.utils.validation.annotation.Password;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 @Data
 @Password

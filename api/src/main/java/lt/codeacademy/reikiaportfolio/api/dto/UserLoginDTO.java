@@ -5,7 +5,6 @@ import lombok.Data;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Role;
 
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 @Data
 @Builder
