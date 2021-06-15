@@ -47,7 +47,8 @@
 
 <h2 align="center">About</h2>
 
-[![noriuPotfolio demo](https://www.youtube.com/watch?v=TcaE10gB-DQ)](https://www.youtube.com/watch?v=TcaE10gB-DQ)
+https://user-images.githubusercontent.com/54529150/122101148-a6eeb500-ce1c-11eb-84e5-2bf6f43d5006.mp4
+
 
 This project is my original idea, which I use for Code Academy (Java advanced) courses final project. 
 Every year i see more and more people, who wants to share their carrer goals on web, so I decided to help them acomplish their goals. 
