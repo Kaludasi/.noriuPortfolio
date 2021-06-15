@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+* {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  min-width: 375px;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-padding: -1000px;
+  scroll-behavior: smooth;
+}
+
+.name {
+  font-size: smaller;
+  font-family: "Michroma", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+.background {
+  position: fixed;
+  z-index: -20;
+  animation: pulseOpacity 5s infinite;
+}
+
+.arrowDown {
+  animation: jump 3s infinite;
+}
+
+html:not([data-scroll="0"]) .arrowDown {
+  transition: 1s ease-out;
+  opacity: 0;
+}
+
+html[data-scroll="0"] .arrowDown {
+  transition: 1s ease-in;
+  opacity: 1;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(-80%);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+}
+@keyframes pulseOpacity {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+#header {
+  z-index: 10;
+}
+
+html:not([data-scroll="0"]) #header > * {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+.arrowDown {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+html:not([data-scroll="0"]) #header:hover * {
+  opacity: 1;
+  height: auto;
+}
+
+html[data-scroll="0"] .left {
+  transition: transform 1s ease-out;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  transform: translateX(-25%);
+}
+
+html:not([data-scroll="0"]) .left {
+  transition: transform 1.3s ease-in;
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  transform: translateX(-7%);
+}
+
+html[data-scroll="0"] .right {
+  transition: transform 1s ease-out;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  transform: translateX(25%);
+}
+
+html:not([data-scroll="0"]) .right {
+  transition: transform 1.3s ease-in;
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  top: 0;
+  transform: translateX(7%);
+}
+
+html:not([data-scroll="0"]) #header {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+html:not([data-scroll="0"]) #header:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.btn10 {
+  margin: auto 0;
+  height: 15px;
+  padding: 10px 30px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase !important;
+  letter-spacing: 2px;
+  background-color: #1d1d1d;
+  color: #ffffff !important;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.btn10:hover {
+  border: 1px solid rgba(7, 25, 130, 0);
+  color: black !important;
+}
+
+.btn10::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to left, #00ffff, #14d40d);
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn10::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to left, #d40d53, #640fe0);
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+}
+
+.btn10:hover::before, .btn1O:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+
+.btn10:hover::after, .btn1O:hover::after {
+  opacity: 1;
+  width: 120%;
+}
+
+.btn-two {
+  position: relative;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+}
+
+.btn-two::before, .btn-two::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-two::before, .btn-two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+
+.btn-two:hover::before {
+  animation-name: rotateccw;
+  animation-duration: 3s;
+}
+
+.btn-two:hover::after, .btn-two:hover::before {
+  left: 96px;
+  width: 64px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.email:hover > .onHoverAppear {
+  display: block;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  width: 20px;
+  font-size: 20px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.email:hover {
+  font-size: 0;
+}
+
+.email > .onHoverAppear {
+  opacity: 0;
+  display: none;
+  width: 0;
+}
+
+.phone:hover > .onHoverAppear {
+  display: block;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  width: 20px;
+  font-size: 20px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+}
+
+.phone:hover {
+  font-size: 0;
+}
+
+.href {
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.phone > .onHoverAppear {
+  display: block;
+  opacity: 0;
+  width: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.responsiveHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  z-index: 5;
+  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+}
+
+.name {
+  transition: top 0.4s;
+  font-family: "Michroma", sans-serif;
+  font-size: 2vw;
+  margin: auto 0;
+  width: 100%;
+  text-align: center;
+}
+
+#header {
+  display: none;
+}
+
+.href {
+  color: black;
+  cursor: pointer;
+  margin: 5px;
+}
+
+tr, td, th {
+  border: 1px white solid;
+  padding: 5px;
+}
+
+.inputLabel {
+  color: white;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background: transparent;
+  }
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  background-color: transparent !important;
+  border-color: white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.customCard {
+  background-color: #1d1d1d;
+}
+
+table {
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
