@@ -71,18 +71,17 @@ I created a website in which you can order CV or Portoflio website.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Kaludasi/.noriuPortfolio.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your SECRET SHA256 in `application.properties`
+3. Enter your SECRET JWT KEY in `application.properties`
    ```properties
-   SECRET_KEY='ENTER YOUR API';
+   security.jwt.secret=${SECRET_KEY};
    ```
 
 <!-- CONTACT -->
@@ -90,5 +89,5 @@ I created a website in which you can order CV or Portoflio website.
 
 Klaudijus - [@klaudas.sim](https://www.instagram.com/klaudas.sim/) - simo.klaudijus@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Kaludasi/.noriuPortfolio.git](https://github.com/Kaludasi/.noriuPortfolio.git)
 
