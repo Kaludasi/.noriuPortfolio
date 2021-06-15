@@ -43,7 +43,19 @@ I created a website in which you can order CV or Portoflio website.
    ```properties
    security.jwt.secret=${SECRET_KEY};
    ```
-
+4. Run Backend application in directory api
+   ```sh
+   mvn clean spring-boot:run
+   ```
+   or
+   ```sh
+   mvnw clean spring-boot:run
+   ```
+   
+5. Run Front-end application in directory ui
+   ```sh
+   npm start
+   ```
 <!-- CONTACT -->
 ## Contact
 
