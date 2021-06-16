@@ -16,7 +16,6 @@ import java.util.Set;
 @Data
 @ToString(exclude = "password")
 @Entity
-//@Builder
 @Table(
         uniqueConstraints = {@UniqueConstraint(columnNames = {"email"})}
 )
