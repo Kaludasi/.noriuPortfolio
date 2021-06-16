@@ -14,7 +14,7 @@ public class UserOrderDTO {
     @NotEmpty(message = "Product is required")
     private ProductDTO product;
     @NotEmpty(message = "Customer is required")
-    private PersonInfoDTO customer;
+    private PersonMinimalInfoDTO customer;
     @Nullable
     private String productDescription;
     @NotEmpty(message = "Payment type is required")

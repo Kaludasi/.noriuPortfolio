@@ -34,26 +34,24 @@ public class InitialDataConfig implements ApplicationListener<ContextRefreshedEv
             roleService.createNew(new Role(1L, "ADMIN"));
             roleService.createNew(new Role(2L, "USER"));
         }
-        if (myUserDetailsService.getUserInfoByEmail("admin@gmail.com") == null){
-            myUserDetailsService.createNewApplicationUser(Person.builder()
-                    .name("Adminas")
-                    .surname("Adminauskas")
-                    .email("admin@gmail.com")
-                    .phone("691337420")
-                    .role(roleService.getById(1L))
-                    .password("admin")
-                    .orders(List.of())
-                    .build());
-            myUserDetailsService.createNewApplicationUser(Person.builder()
-                    .name("Useris")
-                    .surname("Useriauskas")
-                    .email("user@gmail.com")
-                    .phone("84864345")
-                    .role(roleService.getById(2L))
-                    .password("user")
-                    .orders(List.of())
-                    .build());
-        }
+//        if (myUserDetailsService.getUserInfoByEmail("admin@gmail.com") == null){
+//            myUserDetailsService.createNewApplicationUser(Person.builder()
+//                    .name("Adminas")
+//                    .surname("Adminauskas")
+//                    .email("admin@gmail.com")
+//                    .phone("691337420")
+//                    .role(roleService.getById(1L))
+//                    .password("admin")
+//                    .build());
+//            myUserDetailsService.createNewApplicationUser(Person.builder()
+//                    .name("Useris")
+//                    .surname("Useriauskas")
+//                    .email("user@gmail.com")
+//                    .phone("84864345")
+//                    .role(roleService.getById(2L))
+//                    .password("user")
+//                    .build());
+//        }
         if (productService.getAllProducts().size() == 0) {
             productService.createorUpdateProduct(Product.builder()
                     .name("web cb")

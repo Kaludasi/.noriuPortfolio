@@ -68,7 +68,7 @@ public class UserOrderController {
     })
     @ResponseStatus(HttpStatus.CREATED)
     public void createOrder(@Valid @RequestBody CreateOrderDTO createOrderDTO) {
-        Person person = myUserDetailsService.loadUserByUsername(createOrderDTO.getEmail());
+        Person person = myUserDetailsService.getById(myUserDetailsService.loadUserByUsername(createOrderDTO.getEmail()).getId());
         Product product = productService.getById(createOrderDTO.getProduct());
         createOrderDTO.setStatus("laukiamaApmokejimo");
         userOrderService.createorUpdateOrder(map(createOrderDTO, person, product));
@@ -95,6 +95,7 @@ public class UserOrderController {
     })
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateProduct(@Valid @RequestBody PersonOrder order) {
+        myUserDetailsService.addOrder(order);
         userOrderService.createorUpdateOrder(order);
     }
 }

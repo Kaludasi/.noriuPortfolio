@@ -11,13 +11,13 @@ import java.util.UUID;
 public class EntityFactory {
 
     public static Person getPerson(String name, String surname, String email, String password, String phone, List<PersonOrder> orders) {
-        return Person.builder()
-                .name(name)
-                .surname(surname)
-                .email(email)
-                .password(password)
-                .phone(phone)
-                .orders(orders)
+        return Person.PersonBuilder.aPerson()
+                .withName(name)
+                .withSurname(surname)
+                .withEmail(email)
+                .withPassword(password)
+                .withPhone(phone)
+                .withOrders(orders)
                 .build();
     }
 

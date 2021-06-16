@@ -12,9 +12,11 @@ import java.util.List;
 public class UserOrderService {
 
     private final UserOrderRepository userOrderRepository;
+    private final MyUserDetailsService myUserDetailsService;
 
-    public UserOrderService(UserOrderRepository userOrderRepository) {
+    public UserOrderService(UserOrderRepository userOrderRepository, MyUserDetailsService myUserDetailsService) {
         this.userOrderRepository = userOrderRepository;
+        this.myUserDetailsService = myUserDetailsService;
     }
 
     public void createorUpdateOrder(PersonOrder personOrder) {

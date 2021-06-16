@@ -16,12 +16,18 @@ import java.util.Set;
 @Data
 @ToString(exclude = "password")
 @Entity
-@Builder
+//@Builder
 @Table(
         uniqueConstraints = {@UniqueConstraint(columnNames = {"email"})}
 )
 public class Person implements UserDetails {
 
+    @OneToMany(orphanRemoval = true, cascade = {CascadeType.PERSIST,
+            CascadeType.DETACH,
+            CascadeType.REMOVE,
+            CascadeType.REFRESH}, mappedBy = "customer")
+    @ApiModelProperty(notes = "Order", value = "orders", name = "orders")
+    List<PersonOrder> orders;
     @Id
     @GeneratedValue
     @ApiModelProperty(notes = "personId", value = "1", name = "id")
@@ -41,9 +47,6 @@ public class Person implements UserDetails {
     private Role role;
     @ApiModelProperty(notes = "Phone", value = "luakiamaApmokejimo", name = "phone")
     private String phone;
-    @OneToMany(orphanRemoval = true)
-    @ApiModelProperty(notes = "Order", value = "orders", name = "orders")
-    List<PersonOrder> orders;
 
     protected Person() {
     }
@@ -57,6 +60,11 @@ public class Person implements UserDetails {
         this.role = role;
         this.phone = phone;
         this.orders = orders;
+    }
+
+    public void addOrder(PersonOrder personOrder) {
+        personOrder.setCustomer(this);
+        orders.add(personOrder);
     }
 
     @Override
@@ -87,6 +95,78 @@ public class Person implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+
+    public static final class PersonBuilder {
+        List<PersonOrder> orders;
+        private Long id;
+        private String name;
+        private String surname;
+        private String email;
+        private String password;
+        private Role role;
+        private String phone;
+
+        private PersonBuilder() {
+        }
+
+        public static PersonBuilder aPerson() {
+            return new PersonBuilder();
+        }
+
+        public PersonBuilder withOrders(List<PersonOrder> orders) {
+            this.orders = orders;
+            return this;
+        }
+
+        public PersonBuilder withId(Long id) {
+            this.id = id;
+            return this;
+        }
+
+        public PersonBuilder withName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public PersonBuilder withSurname(String surname) {
+            this.surname = surname;
+            return this;
+        }
+
+        public PersonBuilder withEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public PersonBuilder withPassword(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public PersonBuilder withRole(Role role) {
+            this.role = role;
+            return this;
+        }
+
+        public PersonBuilder withPhone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+
+        public Person build() {
+            Person person = new Person();
+            person.setOrders(orders);
+            person.setId(id);
+            person.setName(name);
+            person.setSurname(surname);
+            person.setEmail(email);
+            person.setPassword(password);
+            person.setRole(role);
+            person.setPhone(phone);
+            return person;
+        }
     }
 }
 

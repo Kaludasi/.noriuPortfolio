@@ -4,6 +4,7 @@ import lt.codeacademy.reikiaportfolio.api.dto.PersonInfoDTO;
 import lt.codeacademy.reikiaportfolio.api.exceptions.user.UserAlreadyExistsException;
 import lt.codeacademy.reikiaportfolio.api.exceptions.user.UserNotFoundException;
 import lt.codeacademy.reikiaportfolio.persistence.entity.Person;
+import lt.codeacademy.reikiaportfolio.persistence.entity.PersonOrder;
 import lt.codeacademy.reikiaportfolio.persistence.repository.RoleRepository;
 import lt.codeacademy.reikiaportfolio.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,17 +23,14 @@ public class MyUserDetailsService implements UserDetailsService {
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
-    private final UserOrderService userOrderService;
 
     @Autowired
     public MyUserDetailsService(RoleRepository roleRepository,
                                 PasswordEncoder passwordEncoder,
-                                UserRepository userRepository,
-                                UserOrderService userOrderService) {
+                                UserRepository userRepository) {
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
-        this.userOrderService = userOrderService;
     }
 
     @Override
@@ -50,6 +48,12 @@ public class MyUserDetailsService implements UserDetailsService {
         }
     }
 
+    public void addOrder(PersonOrder personOrder){
+        Person customer = loadUserByUsername(personOrder.getCustomer().getEmail());
+        customer.addOrder(personOrder);
+        userRepository.save(customer);
+    }
+
     public PersonInfoDTO getUserInfoByEmail(String email) {
         Optional<Person> person = userRepository.findByEmail(email);
         return person.map(value -> PersonInfoDTO.builder()
@@ -57,8 +61,12 @@ public class MyUserDetailsService implements UserDetailsService {
                 .phone(value.getPhone())
                 .name(value.getName())
                 .surname(value.getSurname())
-                .orders(mapOrderList(userOrderService.getOrdersByUser(value)))
+                .orders(mapOrderList(value.getOrders()))
                 .build()).orElseThrow(() -> new UserNotFoundException(email));
+    }
+
+    public Person getById(Long id){
+        return userRepository.getById(id);
     }
 }
 

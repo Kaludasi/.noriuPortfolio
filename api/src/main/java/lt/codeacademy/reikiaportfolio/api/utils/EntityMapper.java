@@ -39,10 +39,19 @@ public interface EntityMapper {
     static UserOrderDTO map(PersonOrder personOrder) {
         return UserOrderDTO.builder()
                 .id(personOrder.getId())
-                .customer(map(personOrder.getCustomer()))
+                .customer(mapToMinimalInfo(personOrder.getCustomer()))
                 .product(map(personOrder.getProduct()))
                 .productDescription(personOrder.getProductDescription())
                 .status(personOrder.getStatus())
+                .build();
+    }
+
+    static PersonMinimalInfoDTO mapToMinimalInfo(Person customer) {
+        return PersonMinimalInfoDTO.builder()
+                .name(customer.getName())
+                .email(customer.getEmail())
+                .surname(customer.getSurname())
+                .phone(customer.getPhone())
                 .build();
     }
 
