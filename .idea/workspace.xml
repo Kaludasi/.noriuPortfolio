@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="add 401 redirect&#10;add jwt save to localstorage" />
+    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="bidirectional bug fixes">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/PersonMinimalInfoDTO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +69,7 @@
       <workItem from="1623796591964" duration="17000" />
       <workItem from="1623796693888" duration="214000" />
       <workItem from="1623835190362" duration="38000" />
+      <workItem from="1623854541046" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="add aplication properties and profiles">
       <created>1623777570891</created>
@@ -264,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623835224550</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="bidirectional bug fixes">
+      <created>1623854575839</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1623854575839</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +293,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add DTO's" />
     <MESSAGE value="add config" />
     <MESSAGE value="add jwt" />
     <MESSAGE value="add entity map utils" />
@@ -308,6 +317,7 @@
     <MESSAGE value="add locale config" />
     <MESSAGE value="Major bug fixes" />
     <MESSAGE value="add 401 redirect&#10;add jwt save to localstorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 401 redirect&#10;add jwt save to localstorage" />
+    <MESSAGE value="bidirectional bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bidirectional bug fixes" />
   </component>
 </project>
