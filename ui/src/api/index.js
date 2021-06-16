@@ -1,15 +1,22 @@
 import axios from "axios"
-import store from "../store/store";
 
 const HTTP = axios.create({
     baseURL: "/api"
 })
 
 HTTP.interceptors.request.use(config => {
-    if (store.getState().user.jwt) {
-        config.headers.authorization = "Bearer " + store.getState().user.jwt
+    if (localStorage.getItem('AUTH_TOKEN')) {
+        config.headers.authorization = "Bearer " + localStorage.getItem('AUTH_TOKEN')
     }
     return config
+})
+
+HTTP.interceptors.response.use((response) => {
+    return response;
+}, function (error) {
+    if (error.response.status === 401) {
+        window.location.replace("/login")
+    }
 })
 
 

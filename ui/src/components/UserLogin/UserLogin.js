@@ -20,6 +20,7 @@ export default () => {
         setSubmitting(true)
         loginUser(loginData)
             .then(({data: loggedInUser, headers: { authorization }}) => {
+                localStorage.setItem("AUTH_TOKEN", authorization)
                 dispatch(
                     setLogin({
                         loggedInUser,

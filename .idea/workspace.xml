@@ -4,58 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="add locale config">
-      <change afterPath="$PROJECT_DIR$/api/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/UserOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/controller/UserOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/CreateOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/CreateOrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/PersonInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/PersonInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserLoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserOrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserRegistrationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/dto/UserRegistrationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/exceptions/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/exceptions/ExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/EntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/validation/CompareFieldsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/api/utils/validation/CompareFieldsValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/InitialDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/InitialDataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/PersonOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/PersonOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/persistence/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/lt/codeacademy/reikiaportfolio/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/api/authApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Contacts/Contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/EditOrderForm/EditOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/EditOrderForm/EditOrderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/EditProductForm/EditProductForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/EditProductForm/EditProductForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/FormikInput/FormikInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/FormikInput/FormikInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/OrderForm/OrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/OrderForm/OrderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/ProductForm/ProductForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/ProductForm/ProductForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/UserLogin/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/UserLogin/UserLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/UserRegistration/UserRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/UserRegistration/UserRegistration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/i18n/LanguageHrefList/LanguageHrefList.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/i18n/LanguageHrefList/LanguageHrefList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/i18n/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/i18n/i18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/EditOrderPage/EditOrderPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/EditOrderPage/EditOrderPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/EditProductPage/EditProductPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/EditProductPage/EditProductPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/OrderPage/OrderPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/OrderPage/OrderPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/OrdersPage/OrdersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/OrdersPage/OrdersPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/ProductsPage/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/ProductsPage/ProductsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/ProfilePage/ProfilePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="d2c8917f-41ae-454a-8581-f09056be658e" name="Default Changelist" comment="Major bug fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +18,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1sObMTgLXuqDp84Cxd6hyjNrsZP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -84,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -117,6 +65,7 @@
       <workItem from="1623777184398" duration="1650000" />
       <workItem from="1623778860676" duration="2032000" />
       <workItem from="1623796591964" duration="17000" />
+      <workItem from="1623796693888" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="add aplication properties and profiles">
       <created>1623777570891</created>
@@ -300,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623778560156</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Major bug fixes">
+      <created>1623796708234</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623796708234</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +275,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add aplication properties and profiles" />
     <MESSAGE value="add basic entity" />
     <MESSAGE value="add DTO's" />
     <MESSAGE value="add config" />
@@ -344,6 +299,7 @@
     <MESSAGE value="add package json" />
     <MESSAGE value="add validation schemas" />
     <MESSAGE value="add locale config" />
-    <option name="LAST_COMMIT_MESSAGE" value="add locale config" />
+    <MESSAGE value="Major bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major bug fixes" />
   </component>
 </project>

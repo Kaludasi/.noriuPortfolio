@@ -16,6 +16,7 @@ export default () => {
 
     const logoutUser = () => {
         dispatch(logout())
+        localStorage.setItem('AUTH_TOKEN', '')
     }
 
     return (
